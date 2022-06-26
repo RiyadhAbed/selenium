@@ -26,6 +26,13 @@ public class Day1 {
 		 WebElement text = driver.findElement(By.xpath("//a[text()='create new account']"));
 		 System.out.println(text.getText());
 		 text.click();
+		 try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		 driver.quit();
 	}
 
 }
